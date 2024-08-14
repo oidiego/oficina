@@ -9,7 +9,11 @@ public class player : MonoBehaviour
 
     private Rigidbody2D rig;
     
-    public float JumpForce; 
+    public float JumpForce;
+
+    public bool isJumping;
+
+    public bool doublejump;
     
     // Start is called before the first frame update
     void Start()
@@ -35,7 +39,37 @@ public class player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            rig.AddForce(new Vector2(0f,JumpForce), ForceMode2D.Impulse);
+            if (!isJumping)
+            {
+                rig.AddForce(new Vector2(0f,JumpForce), ForceMode2D.Impulse);
+                doublejump = true;
+            }
+            else
+            {
+                if (doublejump)
+                {
+                    rig.AddForce(new Vector2(0f,JumpForce), ForceMode2D.Impulse);
+                    doublejump = false;
+                }
+                
+            }
+           
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            isJumping = false;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            isJumping = true;
         }
     }
 }
