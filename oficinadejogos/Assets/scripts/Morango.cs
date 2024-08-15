@@ -32,6 +32,7 @@ public class Morango : MonoBehaviour
             collected.SetActive(true);
 
             controle.instance.totalScore += Score;
+            controle.instance.UpdateScoreText();
             
             Destroy(gameObject, 0.25f);
         }
