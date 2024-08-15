@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "anima\xE7ao.walk"
+  m_Name: "anima\xE7\xE3o.walk"
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 7166236263522030466, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
+      value: {fileID: 2470319409956435798, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
     - time: 0.05
       value: {fileID: 2470319409956435798, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
     - time: 0.1
@@ -66,7 +66,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 7166236263522030466, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
+    - {fileID: 2470319409956435798, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
     - {fileID: 2470319409956435798, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
     - {fileID: -4540918584354326388, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
     - {fileID: -4455822056875728695, guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b, type: 3}
