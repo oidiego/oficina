@@ -85,6 +85,12 @@ public class player : MonoBehaviour
             isJumping = false;
             Anim.SetBool("jump", false);
         }
+        
+         if (collision.gameObject.tag == "spikes")
+                {
+                    controle.instance.ShowGamerOver();
+                    Destroy(gameObject);
+                }
     }
 
     void OnCollisionExit2D(Collision2D collision)
